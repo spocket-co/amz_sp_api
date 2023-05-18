@@ -146,7 +146,7 @@ module AmzSpApi::ListingsItemsApiModel
       # http body (model)
       post_body = opts[:body] 
 
-      return_type = opts[:return_type] || 'Item' 
+      return_type = opts[:return_type] || 'AmzSpApi::ListingsItemsApiModel::Item'
 
       auth_names = opts[:auth_names] || []
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
